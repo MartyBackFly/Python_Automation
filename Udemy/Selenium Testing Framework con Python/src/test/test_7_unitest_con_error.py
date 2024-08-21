@@ -53,6 +53,19 @@ class test_001(unittest.TestCase):
         self.assertIn(self.Variable_A, self.Variable_B , f"{self.Variable_B} --No contiene la palabra {self.Variable_A}")
 
 
+
+
+
+    def test_006(self):
+        self.Variable_A = 50
+        
+        self.Variable_A = "hola que tal "
+        self.Variable_B = "hola que tal "
+        
+        
+        self.assertIsNot(self.Variable_A, self.Variable_B , f"-- {self.Variable_B}--  es igual a --{self.Variable_A}--")
+
+
     def tearDown(self):
         pass
 

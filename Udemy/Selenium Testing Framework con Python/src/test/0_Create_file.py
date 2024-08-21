@@ -50,7 +50,7 @@ def generar_nombre_unico(directorio, indice):
         indice += 1
 
 # completo - directorio = 'C:/Users/fedeh/Desktop/Pytho Automation/Udemy/Selenium Testing Framework con Python/src/test'
-directorio = 'src/test'
+directorio = 'Selenium Testing Framework con Python/src/test'
 indice_siguiente = obtener_indice_siguiente(directorio)
 
 nuevo_archivo = generar_nombre_unico(directorio, indice_siguiente)
