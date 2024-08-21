@@ -33,12 +33,12 @@ class test_002(unittest.TestCase):
 class Test003(unittest.TestCase):
 
     def setUp(self):
-        self.Variable_A = 'mamerto '
+        self.Variable_A = 'gonzales '
         self.Variable_B = 'ricardo'
 
     def test_concatenation(self):
         resultado = self.Variable_A + self.Variable_B
-        self.assertEqual("mamerto el ricardo", resultado, f"El resultado es diferente al esperado: {resultado}")
+        self.assertEqual("gonzales el ricardo", resultado, f"El resultado es diferente al esperado: {resultado}")
 
     def tearDown(self):
         pass

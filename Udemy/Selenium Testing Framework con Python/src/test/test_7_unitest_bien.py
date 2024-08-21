@@ -23,6 +23,39 @@ class test_001(unittest.TestCase):
 
 
 
+    def test_003(self):
+        self.Variable_A = 50 
+        self.Variable_B = 40
+        self.RESULTADO = self.Variable_A + self.Variable_B
+
+        self.assertNotEqual(self.RESULTADO == 100, "El valor no es 10")
+
+
+    def test_004(self):
+        self.Variable_A = 50
+        
+        if self.Variable_A >= 10:
+            self.RESULTADO = True
+        
+        else:
+            self.RESULTADO = False
+        
+        self.assertTrue(self.RESULTADO, f"{self.Variable_A}La afirmacion no es True")
+
+    
+    
+    def test_005(self):
+        self.Variable_A = 50
+        
+        self.Variable_A = "ricardero"
+        self.Variable_B = "esta ricardero presente en este string  ?"
+        
+        
+        self.assertIn(self.Variable_A, self.Variable_B , f"{self.Variable_B} No contiene la palabra {self.Variable_A}")
+    
+    
+    
+    
     def tearDown(self):
         pass
 

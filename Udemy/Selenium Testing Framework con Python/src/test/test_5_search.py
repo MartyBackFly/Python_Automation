@@ -3,7 +3,7 @@ import datetime
 print("-----------------------------1--------------------------------")
 
 
-text = "a ricardo le gusta la empanada de tu hermana "
+text = "a ricardo le gusta salir a correr con el perro  "
 
 search  = re.search ("empanada" , text , re.IGNORECASE)
 
@@ -11,7 +11,7 @@ print (search)
 
 print("----------------------------2---------------------------------")
 
-text1 = "a ricardo le gusta la empanada de tu hermana "
+text1 = "a ricardo le gusta salir a correr con el perro  "
 
 search  = re.search ("empanada" , text1, re.IGNORECASE)
 
@@ -33,7 +33,7 @@ print("----------------------------3---------------------------------")
 
 # pongo la palabra a buscar en una variable para luego remplazar si no la encontre en el ELSE
 
-text2 = "a ricardo le gusta la empanada de tu hermana empanada en empanada"
+text2 = "a ricardo le gusta salir a correr con el perro y la empanada Empanada"
 pattern = "alberto"
 
 
@@ -57,7 +57,7 @@ print("-----------------------------4--------------------------------")
 
 
 
-text3 = "a ricardo le gusta la empanada de tu Hermana Empanada en EMPANADA"
+text3 = "a ricardo le gusta salir a correr con el perro y la Empanada "
 
 search  = re.search ("empanada " , text3, re.IGNORECASE)
 
@@ -71,9 +71,9 @@ print("--------------------------5----------------------------------")
 
 # SIN re.ingnorecase 
 
-text4 = "a ricardo le gusta la empanada de tu Hermana Empanada en EMPANADA"
+text4 = "a ricardo le gusta salir a correr con el perro y la Empanada"
 
-search  = re.search ("hermana " , text4, )
+search  = re.search ("asdasd " , text4, )
 
 
 print(search)
@@ -84,7 +84,7 @@ print(search)
 print("----------------------------6---------------------------------")
 
 
-text5 = "a ricardo le gusta la empanada de tu hermana y a alberto la de petinato"
+text5 = "a ricardo le gusta salir a correr con el perro  y a ramon el jamon y queso "
 pattern = "alberto"
 remplazo = "el tipo raro"
 
@@ -119,7 +119,7 @@ print("----------------------------7---------------------------------")
 
 # dividir texto sobre palabra hermana 
 
-text6 = "a ricardo le gusta la empanada de tu hermana y a alberto la de petinato"
+text6 = "a ricardo le gusta salir a correr con el perro  y a ramon el jamon y queso "
 
 split  = re.split ("hermana " , text6, re.IGNORECASE)
 
@@ -133,7 +133,7 @@ print("--------------------------8-----------------------------------")
 
 # dividir texto entre los espacios ""
 
-text7 = "a ricardo le gusta la empanada de tu hermana y a alberto la de petinato"
+text7 = "a ricardo le gusta salir a correr con el perro  y a ramon el jamon y queso "
 
 split = re.split (" " , text7)
 
@@ -151,7 +151,7 @@ print("------------------------------9-------------------------------")
 
 # dividir texto entre los espacios ""
 
-text8 = "a ricardo le gusta la empanada de tu hermana y a alberto la de petinato"
+text8 = "a ricardo le gusta salir a correr con el perro  y a ramon el jamon y queso "
 
 split = re.split (" " , text8)
 
@@ -218,9 +218,3 @@ print("------------------------------12-------------------------------")
 
 
 
-
-print("------------------------------13-------------------------------")
-
-print("------------------------------9-------------------------------")
-
-print("------------------------------9-------------------------------")
