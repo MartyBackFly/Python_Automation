@@ -1,0 +1,19 @@
+
+
+
+crear : python -m venv venv
+
+
+
+activar : venv\Scripts\activate
+
+desactivar : deactivate
+
+
+eliminar : 
+
+
+En Windows:
+
+Usa el Explorador de archivos para navegar a tu proyecto M_Automation.
+Elimina la carpeta venv

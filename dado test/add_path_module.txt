@@ -1,0 +1,47 @@
+
+
+1. Verificar la instalación del módulo
+Primero, asegúrate de que el módulo que estás intentando importar esté instalado en tu entorno de Python. Puedes hacer esto ejecutando pip list desde la línea de comandos para listar todos los paquetes instalados. Si el módulo no aparece en la lista, necesitas instalarlo utilizando pip install <nombre_del_modulo>.
+
+2. Configurar el entorno de desarrollo
+Si estás utilizando un entorno de desarrollo como Visual Studio Code, PyCharm u otro, es posible que necesites configurar las rutas de búsqueda de módulos adicionales:
+
+Visual Studio Code: Puedes configurar python.autoComplete.extraPaths en tu configuración de settings.json para incluir el directorio donde está instalado el módulo. Por ejemplo:
+
+json
+Copiar código
+"python.autoComplete.extraPaths": [
+    "/ruta/al/directorio/del/modulo"
+]
+Puedes editar settings.json presionando Ctrl + , (Windows/Linux) o Cmd + , (macOS) en VS Code y buscando la configuración python.autoComplete.extraPaths.
+
+
+fede :solucione con esto de aqui arribita 
+
+
+
+
+
+PyCharm: PyCharm generalmente detecta automáticamente los entornos virtuales de Python y configura las rutas de búsqueda de módulos correctamente. Si estás utilizando un entorno virtual, asegúrate de que esté activado en PyCharm (File > Settings > Project: <nombre_del_proyecto> > Python Interpreter).
+
+3. Reiniciar el entorno de desarrollo
+A veces, reiniciar el entorno de desarrollo puede ayudar a que reconozca los cambios de configuración o instalación de módulos.
+
+4. Verificar la ubicación del módulo
+Asegúrate de que el módulo que estás intentando importar esté en una ubicación accesible desde tu script de Python. Esto es especialmente importante si estás trabajando con estructuras de directorios complejas o proyectos que utilizan rutas relativas.
+
+5. Usar entornos virtuales
+Siempre es recomendable trabajar dentro de un entorno virtual para evitar conflictos entre diferentes versiones de librerías y asegurar la portabilidad del proyecto. Asegúrate de que el entorno virtual esté activado y configurado correctamente en tu entorno de desarrollo.
+
+Ejemplo práctico en Visual Studio Code
+Si estás usando VS Code y tienes problemas para importar un módulo instalado globalmente o en un entorno virtual, puedes seguir estos pasos:
+
+Abrir la terminal integrada: En VS Code, presiona Ctrl + ' (Windows/Linux) o Cmd + ' (macOS) para abrir la terminal integrada.
+
+Verificar la instalación del módulo: Ejecuta pip list para asegurarte de que el módulo esté instalado.
+
+Configurar python.autoComplete.extraPaths: Edita settings.json como se mencionó anteriormente para agregar la ruta al directorio donde está instalado el módulo.
+
+Reiniciar VS Code: A veces, es necesario cerrar y volver a abrir VS Code para que los cambios en la configuración surtan efecto.
+
+Siguiendo estos pasos, deberías poder resolver el problema y permitir que tu entorno de desarrollo encuentre correctamente los módulos que estás importando en tus scripts de Python.

@@ -1,0 +1,39 @@
+
+crear entorno de trabajo 
+
+#python -m venv entornotest   
+
+# PS C:\Users\fedeh\Desktop\Pytho Automation\Udemy\Selenium Testing Framework con Python> python -m venv entornotest  
+
+activate 
+PS C:\Users\fedeh\Desktop\Pytho Automation\Udemy\Selenium Testing Framework con Python> activate 
+
+deactivate 
+(entornotest) PS C:\Users\fedeh\Desktop\Pytho Automation\Udemy\Selenium Testing Framework con Python> deactivate
+...
+
+PS C:\Users\fedeh\Desktop\Pytho Automation\Udemy\Selenium Testing Framework con Python>
+
+
+actualizar pip
+python.exe -m pip install --upgrade pip
+
+---
+# para generar el archivo requirements
+
+# pip freeze > requirements.txt
+
+---
+
+# para usar archivo instalar paquetes
+
+# pip install -r requirements.txt
+
+---
+
+# actualizar todos los paquetes 
+
+pip install -r requirements.txt --upgrade
+
+
+# pip list ver lista versiones
